@@ -11,6 +11,16 @@ make simple HTTP requests in many programming languages.
 The goal is to provide snippets to make simple HTTP request
 with builtins modules/functions of each language!
 
+** Nix
+
+You can test and reproduce all snippets locally if you have =Nix= installed
+in your system!
+
+Installation steps and guides can be found at https://nixos.org/!
+
+Once you have =Nix= installed you can build a complete dev environment with =nix-shell= command
+executed on folder root.
+
 ** Warning
 All code snippets tries to be updated in syntax and
 follows language idioms.
@@ -51,3 +61,6 @@ Body parameter only will work for =PUT=, =POST= or =PATCH= requests!
 
   Example: Haskell =GET= request already exist, so it's version is 1.
   New branch -> =haskell/get-v2=
+
+- Remember to add your language compiler/interpreter into =shell.nix=!
+  You can find the most updated versions of packages at https://search.nixos.org/packages/
