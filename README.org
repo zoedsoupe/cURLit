@@ -25,6 +25,7 @@ curl
 
 ** Table of Contents
 - [[./js][Javascript/NodeJS (fetch/request)]]
+- [[./go][Go (http)]]
 - [[./elixir][Elixir (httpc)]]
 - [[./python][Python (request)]]
 - [[./ruby][Ruby (Net::HTTP)]]
@@ -33,3 +34,4 @@ curl
 ** Roadmap
 - [ ] Create other HTTP verbs snippets
 - [ ] Add more programming languages snippets
+- [ ] Add a detailed README to each language folder
