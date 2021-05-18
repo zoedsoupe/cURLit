@@ -1,0 +1,35 @@
+#+title: cURLit
+#+author: Matheus de Souza Pessanha
+#+email: matheus_pessanha2001@outlook.com
+
+#+caption: PRs
+[[https://img.shields.io/badge/PRs-welcome-brightgreen.sv]]
+
+You'll find into this repository examples of how to
+make simple HTTP requests in many programming languages.
+
+The goal is to provide snippets to make simple HTTP request
+with builtins modules/functions of each language!
+
+** Warning
+All code snippets tries to be updated in syntax and
+follows language idioms.
+
+If you want to add older versions examples, feel free to open a PR!
+
+** Basic cURL
+
+#+begin_src sh
+curl 
+#+end_src
+
+** Table of Contents
+- [[./js][Javascript/NodeJS (fetch/request)]]
+- [[./elixir][Elixir (httpc)]]
+- [[./python][Python (request)]]
+- [[./ruby][Ruby (Net::HTTP)]]
+- [[./haskell][Haskell (Network.HTTP)]]
+
+** Roadmap
+- [ ] Create other HTTP verbs snippets
+- [ ] Add more programming languages snippets
