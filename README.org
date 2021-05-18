@@ -20,8 +20,11 @@ If you want to add older versions examples, feel free to open a PR!
 ** Basic cURL
 
 #+begin_src sh
-curl 
+curl -X <method> -H <headers> -d <body>
 #+end_src
+
+The default method is =GET=!
+Body parameter only will work for =PUT=, =POST= or =PATCH= requests!
 
 ** Table of Contents
 - [[./js][Javascript/NodeJS (fetch/request)]]
@@ -35,3 +38,16 @@ curl
 - [ ] Create other HTTP verbs snippets
 - [ ] Add more programming languages snippets
 - [ ] Add a detailed README to each language folder
+
+** Contributing
+- To add a new type of request, create a new branch as:
+  =lang/verb=!
+
+  Example: =elixir/post=
+
+- If you want to apply a correction or suggest a different way
+  to make an existing request, create a new branch as:
+  =lang/verb-vx= where =x= is a number of the "version"
+
+  Example: Haskell =GET= request already exist, so it's version is 1.
+  New branch -> =haskell/get-v2=
