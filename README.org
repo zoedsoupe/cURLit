@@ -3,7 +3,7 @@
 #+email: matheus_pessanha2001@outlook.com
 
 #+caption: PRs
-[[https://img.shields.io/badge/PRs-welcome-brightgreen.sv]]
+[[https://img.shields.io/badge/PRs-welcome-brightgreen.svg]]
 
 You'll find into this repository examples of how to
 make simple HTTP requests in many programming languages.
