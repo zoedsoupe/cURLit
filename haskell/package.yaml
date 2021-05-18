@@ -1,0 +1,29 @@
+name:                haskell
+version:             0.1.0.0
+github:              "Mdsp9070/cURLit"
+author:              "Matheus de Souza Pessanha"
+maintainer:          "matheus_pessanha2001@outlook.com"
+copyright:           "2021 Mdsp9070"
+
+extra-source-files:
+- README.org
+
+description:         Please see the README on GitHub at <https://github.com/githubuser/haskell#readme>
+
+dependencies:
+- base >= 4.7 && < 5
+- HTTP
+
+library:
+  source-dirs: src
+
+executables:
+  haskell-exe:
+    main:                Main.hs
+    source-dirs:         app
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    dependencies:
+    - haskell

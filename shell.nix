@@ -21,6 +21,7 @@ in mkShell {
     python39
 
     ghc
+    stack
 
     ruby_3_0
   
