@@ -10,13 +10,13 @@ defmodule Get do
     IO.puts(body)
   end
 
-  defp parse({:ok, {_, status, _}, _headers, body}) do
+  defp parse({:ok, {{_, status, msg}, _headers, _body}}) do
     IO.puts("Error! Status: #{status}")
-    IO.puts("Body: #{body}")
+    IO.puts("Message: #{msg}")
   end
 
   defp parse({:error, err}),
     do: IO.puts("Request error: #{err}")
 end
 
-Get.run("http://httpbin.org")
+Get.run("your_endpoint")

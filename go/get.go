@@ -7,7 +7,7 @@ import (
 )
 
 func main() {
-	url := "you_endpoint"
+	url := "your_endpoint"
 
 	resp, err := http.Get(url)
 
