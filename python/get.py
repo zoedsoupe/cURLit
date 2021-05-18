@@ -1,10 +1,10 @@
 import http.client as hc
 
-host = "httpbin.org"
+host = "your_endpoint"
 
 method = "GET"
 
-url = "/"
+url = "url_path"
 
 conn = hc.HTTPConnection(host)
 
