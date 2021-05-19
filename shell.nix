@@ -1,20 +1,12 @@
 { pkgs ? import <nixpkgs> {} }:
 
-with pkgs;
-
-let
-  elixirDrv = elixir.override {
-    version = "1.12.0-rc.1";
-    rev = "4c6f393bd0484795c020d4a6fa0a7bc7de1b9102";
-    sha256 = "1y8fbhli29agf84ja0fwz6gf22a46738b50nwy26yvcl2n2zl9d8";
-  };
-in mkShell {
+pkgs.mkShell {
   name = "mdsp_exercism";
 
-  buildInputs = [
+  buildInputs = with pkgs; [
     go
     
-    elixirDrv
+    elixir
 
     nodejs-16_x
 
